@@ -6,7 +6,7 @@ const admin = require('firebase-admin');
 admin.initializeApp();
 
 // Definition of the Cloud Function reacting to publication on the telemetry topic:
-exports.detectTelemetryEvents = functions.pubsub.topic('iotlabs').onPublish(
+exports.detectTelemetryEvents = functions.pubsub.topic('iotlab').onPublish(
     (message, context) => {
         // The onPublish() trigger function requires a handler function that receives
         // 2 arguments: one related to the message published and
